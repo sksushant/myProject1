@@ -61,6 +61,16 @@ public class AppointmentBooking extends commonFunctions{
     public void i_should_log_out() {
         homepage.logOut();
     }
+    @Given("I should open url2")
+    public void i_should_open_url2() throws InterruptedException {
+        login.launchGoogle();
+        login.maximizeBrowser();
+    }
+
+    @When("I should capture share price from graph")
+    public void i_should_capture_share_price_from_graph() throws InterruptedException {
+        homepage.captureSharePrice();
+    }
 
 }
 
